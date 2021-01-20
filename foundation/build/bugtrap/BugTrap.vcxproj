@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8CF1ADA-264A-4127-86C2-FD7057D3792C}</ProjectGuid>
+    <RootNamespace>BugTrap</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>bugtrap</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)D-x64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)-x64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BUGTRAP_EXPORTS;IBUGTRAP_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>$(IntDir)$(TargetName).res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;shlwapi.lib;version.lib;wininet.lib;nothrownew.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>BugTrap.def</ModuleDefinitionFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\..\foundation\bin\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;BUGTRAP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\zlib\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>$(IntDir)$(TargetName).res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;shlwapi.lib;version.lib;wininet.lib;nothrownew.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BUGTRAP_EXPORTS;IBUGTRAP_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>$(IntDir)$(TargetName).res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;shlwapi.lib;version.lib;wininet.lib;nothrownew.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>BugTrap.def</ModuleDefinitionFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\..\foundation\bin\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;BUGTRAP_EXPORTS;IBUGTRAP_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>$(IntDir)$(TargetName).res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;shlwapi.lib;version.lib;wininet.lib;nothrownew.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\..\foundation\bin\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\bugtrap\AboutDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\DescribeErrorDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\IBugTrap.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bugtrap\MachineInfoDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\MachineStateDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\MainDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\PreviewDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\SendMailDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\SimpleDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\TransferProgressDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\WaitDlg.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\ColHelper.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\StrHolder.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\AnimProgressBar.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\HexView.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\HyperLink.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\ImageView.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\LayoutManager.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\Splitter.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\TextView.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\WaitCursor.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\CMapi.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\EnumProcess.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\InMemLogFile.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\LogFile.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\LogStream.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\ModuleImportTable.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\NetThunks.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\SymEngine.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\SymEngineNet.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\TextLogFile.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\ThemeXP.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\XmlLogFile.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\BugTrap.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\BugTrapNet.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\BugTrapUI.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\BugTrapUtils.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\ResManager.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\AssemblyInfo.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\Globals.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bugtrap\Encoding.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\TextFormat.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\XmlReader.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\XmlWriter.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\FileStream.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\InputStream.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\MemStream.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\OutputStream.cpp" />
+    <ClCompile Include="..\..\src\bugtrap\StrStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\bugtrap\IBugTrap.h" />
+    <ClInclude Include="..\..\src\bugtrap\AboutDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\DescribeErrorDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\MachineInfoDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\MachineStateDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\MainDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\PreviewDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\SendMailDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\SimpleDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\TransferProgressDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\WaitDlg.h" />
+    <ClInclude Include="..\..\src\bugtrap\Array.h" />
+    <ClInclude Include="..\..\src\bugtrap\Buffer.h" />
+    <ClInclude Include="..\..\src\bugtrap\ColHelper.h" />
+    <ClInclude Include="..\..\src\bugtrap\Hash.h" />
+    <ClInclude Include="..\..\src\bugtrap\InterfacePtr.h" />
+    <ClInclude Include="..\..\src\bugtrap\List.h" />
+    <ClInclude Include="..\..\src\bugtrap\SmartPtr.h" />
+    <ClInclude Include="..\..\src\bugtrap\StrHolder.h" />
+    <ClInclude Include="..\..\src\bugtrap\AnimProgressBar.h" />
+    <ClInclude Include="..\..\src\bugtrap\HexView.h" />
+    <ClInclude Include="..\..\src\bugtrap\HyperLink.h" />
+    <ClInclude Include="..\..\src\bugtrap\ImageView.h" />
+    <ClInclude Include="..\..\src\bugtrap\LayoutManager.h" />
+    <ClInclude Include="..\..\src\bugtrap\Splitter.h" />
+    <ClInclude Include="..\..\src\bugtrap\TextView.h" />
+    <ClInclude Include="..\..\src\bugtrap\WaitCursor.h" />
+    <ClInclude Include="..\..\src\bugtrap\CMapi.h" />
+    <ClInclude Include="..\..\src\bugtrap\EnumProcess.h" />
+    <ClInclude Include="..\..\src\bugtrap\InMemLogFile.h" />
+    <ClInclude Include="..\..\src\bugtrap\LogFile.h" />
+    <ClInclude Include="..\..\src\bugtrap\LogLink.h" />
+    <ClInclude Include="..\..\src\bugtrap\LogStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\ModuleImportTable.h" />
+    <ClInclude Include="..\..\src\bugtrap\NetThunks.h" />
+    <ClInclude Include="..\..\src\bugtrap\SymEngine.h" />
+    <ClInclude Include="..\..\src\bugtrap\SymEngineNet.h" />
+    <ClInclude Include="..\..\src\bugtrap\TextLogFile.h" />
+    <ClInclude Include="..\..\src\bugtrap\ThemeXP.h" />
+    <ClInclude Include="..\..\src\bugtrap\XmlLogFile.h" />
+    <ClInclude Include="..\..\src\bugtrap\BTAtlWindow.h" />
+    <ClInclude Include="..\..\src\bugtrap\BTMfcWindow.h" />
+    <ClInclude Include="..\..\src\bugtrap\BTTrace.h" />
+    <ClInclude Include="..\..\src\bugtrap\BugTrap.h" />
+    <ClInclude Include="..\..\src\bugtrap\BugTrapNet.h" />
+    <ClInclude Include="..\..\src\bugtrap\BugTrapUI.h" />
+    <ClInclude Include="..\..\src\bugtrap\BugTrapUtils.h" />
+    <ClInclude Include="..\..\src\bugtrap\ResManager.h" />
+    <ClInclude Include="..\..\src\bugtrap\Globals.h" />
+    <ClInclude Include="..\..\src\bugtrap\LeakWatcher.h" />
+    <ClInclude Include="..\..\src\bugtrap\resource.h" />
+    <ClInclude Include="..\..\src\bugtrap\stdafx.h" />
+    <ClInclude Include="..\..\src\bugtrap\VersionInfo.h" />
+    <ClInclude Include="..\..\src\bugtrap\VersionInfoString.h" />
+    <ClInclude Include="..\..\src\bugtrap\Encoding.h" />
+    <ClInclude Include="..\..\src\bugtrap\TextFormat.h" />
+    <ClInclude Include="..\..\src\bugtrap\XmlReader.h" />
+    <ClInclude Include="..\..\src\bugtrap\XmlWriter.h" />
+    <ClInclude Include="..\..\src\bugtrap\BaseStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\FileStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\InputStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\MemStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\OutputStream.h" />
+    <ClInclude Include="..\..\src\bugtrap\Stream.h" />
+    <ClInclude Include="..\..\src\bugtrap\StrStream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Bug.ico" />
+    <Image Include="res\CheckMark.bmp" />
+    <Image Include="res\ImageToolbar.bmp" />
+    <Image Include="res\SortArrows.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BugTrap.def" />
+    <None Include="res\KeyPair.snk" />
+    <None Include="res\Upload.avi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BugTrap.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hiredis">
+      <UniqueIdentifier>{c64049cc-d89b-4bf1-bd7e-4b579368aea8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\redis\hiredis\alloc.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\async.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\dict.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\hiredis.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\net.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\read.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\sds.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\sockcompat.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\hiredis\ssl.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\redis\hiredis\alloc.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\async.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\async_private.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\dict.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\fmacros.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\hiredis.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\hiredis_ssl.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\net.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\read.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\sds.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\sdsalloc.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\sockcompat.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redis\hiredis\win32.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

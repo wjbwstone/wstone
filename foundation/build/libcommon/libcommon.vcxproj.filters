@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\base">
+      <UniqueIdentifier>{86980869-b4ac-4e04-9a0b-6f7c9feb9c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{e421f797-2259-47c2-b5ce-1cf1aa14a31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\logger">
+      <UniqueIdentifier>{6a379e72-bac3-4b55-a242-2d8897aefb8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\logger">
+      <UniqueIdentifier>{1213060e-fde4-4953-853b-5c5191089519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\json">
+      <UniqueIdentifier>{5196103c-85ee-45a7-8781-9c1db4328a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\json">
+      <UniqueIdentifier>{56604304-4b03-4260-b865-28ce13c4ae50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\curl">
+      <UniqueIdentifier>{ef0f1b77-f0a2-480c-96e4-05e12767f995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\curl">
+      <UniqueIdentifier>{aa8bdbf1-00c2-4a52-94f1-2ac2e22df42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\zxing">
+      <UniqueIdentifier>{fd2da505-74e7-4f9c-8374-83103fb15b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\zxing">
+      <UniqueIdentifier>{02d2cca0-fdcd-45b7-baa1-5ac4d59d07b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\mysql">
+      <UniqueIdentifier>{492b4ed8-fb07-401a-aca9-992ea3b25550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mysql">
+      <UniqueIdentifier>{721591b9-1e95-4325-b94b-88618526fdfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sqlite">
+      <UniqueIdentifier>{7d7b6244-46a9-4af1-bc06-143d5421550e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sqlite">
+      <UniqueIdentifier>{42f0f2b8-8762-446f-b4e5-ffe07928aee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regex">
+      <UniqueIdentifier>{9efa66a0-5011-4ad0-8dd0-9c2e275f0380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypt">
+      <UniqueIdentifier>{8d139312-14db-4f6e-8be3-201f016bfca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\language">
+      <UniqueIdentifier>{763924d3-059f-45da-82ce-70aac8df95b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\archive">
+      <UniqueIdentifier>{23abe9a7-ea2b-4397-9306-f5dd90b0815d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\archive">
+      <UniqueIdentifier>{cfaa4363-1d64-43bf-9138-e2d957ff58fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\archive\lz4">
+      <UniqueIdentifier>{ce20484b-3853-42dc-894d-68f1731c317b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\crypt">
+      <UniqueIdentifier>{edf8d419-3cf4-41b4-b629-8ae999542465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\regex">
+      <UniqueIdentifier>{ff004fbd-0ada-4fa2-902c-40c8287b744c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\redis">
+      <UniqueIdentifier>{20f8afa1-b6eb-4dd4-a6ee-fb4dd022febb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\redis">
+      <UniqueIdentifier>{17a22fe9-5825-44a7-b79e-15270853b8c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\base\Clock.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Condition.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Event.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\FolderMonitor.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Identity.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\MemoryFile.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Pipe.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\RC4.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Registry.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\SHA1.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Thread.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\ThreadPool.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Timer.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\URLCode.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\WIN32Service.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\logger\Example.h">
+      <Filter>include\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\logger\Logger.h">
+      <Filter>include\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\AsyncFileSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\ConsoleSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\FileSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\LogData.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\OutputSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\RollerFileSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\json\json.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\zxing\libzxing.h">
+      <Filter>include\zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqlite\SqliteField.h">
+      <Filter>include\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqlite\SqliteIDB.h">
+      <Filter>include\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqlite\SqliteITable.h">
+      <Filter>include\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqlite\SqliteCell.h">
+      <Filter>src\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqlite\SqliteDB.h">
+      <Filter>src\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqlite\SqliteRow.h">
+      <Filter>src\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqlite\SqliteTable.h">
+      <Filter>src\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\crypt\Crypt.h">
+      <Filter>include\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\RWMutex.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\curl\libcurl.h">
+      <Filter>include\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\archive\Zip.h">
+      <Filter>include\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\lz4.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\lz4frame.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\lz4frame_static.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\xxhash.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\lz4hc.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\archive\lz4\lz4io.h">
+      <Filter>src\archive\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\archive\Tar.h">
+      <Filter>include\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\regex\regex.h">
+      <Filter>include\regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Directory.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\File.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Path.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\String.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Time.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Base64.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\MD5.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLCell.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLDB.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLManager.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLRow.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLTable.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\mysql\IMySQLManager.h">
+      <Filter>include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\mysql\IMySQLTable.h">
+      <Filter>include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\mysql\MySQLField.h">
+      <Filter>include\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Process.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\System.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\archive\Z4Compress.h">
+      <Filter>include\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\LogSink.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logger\LogCommon.h">
+      <Filter>src\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\redis\Redis.h">
+      <Filter>include\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\Console.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mysql\MySQLQuery.h">
+      <Filter>src\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\WIN32Resource.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\MemoryPool.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\base\ByteBuffer.h">
+      <Filter>include\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\base\Base64.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Clock.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Condition.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Event.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\FolderMonitor.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Identity.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\MemoryFile.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Pipe.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\RC4.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Registry.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\SHA1.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Thread.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\ThreadPool.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Timer.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\URLCode.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\WIN32Service.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\AsyncFileSink.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\ConsoleSink.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\FileSink.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\LogData.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\Logger.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\OutputSink.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\RollerFileSink.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\json\FastJson.cc">
+      <Filter>src\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\json\json.cc">
+      <Filter>src\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\libzxing.cpp">
+      <Filter>src\zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqlite\SqliteDB.cc">
+      <Filter>src\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqlite\SqliteTable.cc">
+      <Filter>src\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\RWMutex.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\lz4\lz4.c">
+      <Filter>src\archive\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\lz4\lz4frame.c">
+      <Filter>src\archive\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\lz4\xxhash.c">
+      <Filter>src\archive\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\Zip.cc">
+      <Filter>src\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\lz4\lz4hc.c">
+      <Filter>src\archive\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\lz4\lz4io.cc">
+      <Filter>src\archive\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\Tar.cc">
+      <Filter>src\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypt\Crypt.cc">
+      <Filter>src\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex.cc">
+      <Filter>src\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Directory.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\File.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Path.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\String.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Time.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\MD5.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\MySQLDB.cc">
+      <Filter>src\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\MySQLManager.cc">
+      <Filter>src\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\MySQLTable.cc">
+      <Filter>src\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Process.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\System.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\language\Language.cc">
+      <Filter>src\language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\curl\libcurl.cc">
+      <Filter>src\curl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\archive\Z4Compress.cc">
+      <Filter>src\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logger\LogCommon.cc">
+      <Filter>src\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis\Redis.cc">
+      <Filter>src\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\Console.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mysql\MySQLQuery.cc">
+      <Filter>src\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\WIN32Resource.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\MemoryPool.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\ByteBuffer.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

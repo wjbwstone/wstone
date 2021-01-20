@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZDetector.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZDetectorResult.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZEncodingState.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZHighLevelEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZToken.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\aztec\AZWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BarcodeFormat.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BinaryBitmap.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BitArray.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BitHacks.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BitMatrix.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BitSource.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\BitWrapperBinarizer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ByteArray.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ByteMatrix.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\CharacterSet.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\CharacterSetECI.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\CustomData.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMBitMatrixParser.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMDataBlock.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMDefaultPlacement.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMDetector.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMECB.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMECEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMEncoderContext.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMHighLevelEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMSymbolInfo.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMSymbolShape.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMVersion.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\datamatrix\DMWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\DecodeHints.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\DecoderResult.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\DecodeStatus.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\DetectorResult.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\GenericGF.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\GenericGFPoly.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\GenericLuminanceSource.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\GlobalHistogramBinarizer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\GridSampler.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\HybridBinarizer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\LuminanceSource.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\maxicode\MCBitMatrixParser.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\maxicode\MCDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\maxicode\MCReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\MultiFormatReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\MultiFormatWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCodabarReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCodabarWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode128Patterns.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode128Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode128Writer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode39Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode39Writer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode93Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODCode93Writer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODEAN13Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODEAN13Writer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODEAN8Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODEAN8Writer.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODEANManufacturerOrgSupport.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODITFReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODITFWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODMultiUPCEANReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODRowReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODRSS14Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODRSSExpandedReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCAReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCAWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCEANCommon.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCEANExtensionSupport.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCEANReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCEReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODUPCEWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\ODWriterHelper.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSDataCharacter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSExpandedBinaryDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSExpandedPair.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSExpandedRow.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSFieldParser.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSFinderPattern.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSGenericAppIdDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSPair.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\oned\rss\ODRSSReaderHelper.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFBarcodeMetadata.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFBarcodeValue.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFBoundingBox.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFCodeword.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFCodewordDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFCompaction.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFDecodedBitStreamParser.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFDecoderResultExtra.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFDetectionResult.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFDetectionResultColumn.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFDetector.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFHighLevelEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFModulusGF.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFModulusPoly.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFScanningDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\pdf417\PDFWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\PerspectiveTransform.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRAlignmentPattern.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRAlignmentPatternFinder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRBitMatrixParser.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRCodecMode.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRDataBlock.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRDataMask.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRDecoderMetadata.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRDetector.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRECB.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QREncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QREncodeResult.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRErrorCorrectionLevel.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRFinderPattern.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRFinderPatternFinder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRFinderPatternInfo.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRFormatInformation.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRMaskUtil.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRMatrixUtil.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRReader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRVersion.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\qrcode\QRWriter.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\Reader.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ReedSolomonDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ReedSolomonEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\Result.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ResultMetadata.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ResultPoint.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\Big5MapTable.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\Big5TextDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\Big5TextEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\GBTextDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\GBTextEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\JPTextDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\JPTextEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\KRHangulMapping.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\KRTextDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\textcodec\KRTextEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\TextDecoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\TextEncoder.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\TextUtfEncoding.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\WhiteRectDetector.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXBigInteger.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXConfig.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXContainerAlgorithms.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXNullable.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXNumeric.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXStrConvWorkaround.h" />
+    <ClInclude Include="..\..\src\zxing\core\src\ZXTestSupport.h" />
+    <ClInclude Include="..\..\src\zxing\wrappers\gdiplus\BarcodeGenerator.h" />
+    <ClInclude Include="..\..\src\zxing\wrappers\gdiplus\BarcodeReader.h" />
+    <ClInclude Include="..\..\src\zxing\wrappers\gdiplus\GdiplusInit.h" />
+    <ClInclude Include="..\..\src\zxing\wrappers\gdiplus\ImageReader.h" />
+    <ClInclude Include="..\..\src\zxing\wrappers\gdiplus\ImageWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZDecoder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZDetector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZEncoder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZHighLevelEncoder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZToken.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\aztec\AZWriter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\core\src\BarcodeFormat.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\BitArray.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\BitMatrix.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\BitSource.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\BitWrapperBinarizer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\CharacterSetECI.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMBitMatrixParser.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMDataBlock.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMDefaultPlacement.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMDetector.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMECEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMHighLevelEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMSymbolInfo.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMVersion.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\datamatrix\DMWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\DecodeHints.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\DecodeStatus.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\GenericGF.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\GenericGFPoly.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\GenericLuminanceSource.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\GlobalHistogramBinarizer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\GridSampler.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\HybridBinarizer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\LuminanceSource.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\maxicode\MCBitMatrixParser.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\maxicode\MCDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\maxicode\MCReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\MultiFormatReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\MultiFormatWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCodabarReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCodabarWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode128Patterns.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode128Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode128Writer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode39Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode39Writer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode93Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODCode93Writer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODEAN13Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODEAN13Writer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODEAN8Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODEAN8Writer.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODEANManufacturerOrgSupport.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODITFReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODITFWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODMultiUPCEANReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODRowReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODRSS14Reader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODRSSExpandedReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCAReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCAWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCEANCommon.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCEANExtensionSupport.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCEANReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCEReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODUPCEWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\ODWriterHelper.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\rss\ODRSSExpandedBinaryDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\rss\ODRSSFieldParser.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\rss\ODRSSGenericAppIdDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\oned\rss\ODRSSReaderHelper.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFBarcodeValue.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFBoundingBox.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFCodewordDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFDecodedBitStreamParser.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFDetectionResult.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFDetectionResultColumn.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFDetector.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFHighLevelEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFModulusGF.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFModulusPoly.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFScanningDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\pdf417\PDFWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\PerspectiveTransform.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRAlignmentPattern.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRAlignmentPatternFinder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRBitMatrixParser.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRCodecMode.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRDataBlock.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRDataMask.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRDetector.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QREncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRErrorCorrectionLevel.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRFinderPattern.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRFinderPatternFinder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRFormatInformation.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRMaskUtil.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRMatrixUtil.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRReader.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRVersion.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\qrcode\QRWriter.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\ReedSolomonDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\ReedSolomonEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\Result.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\ResultMetadata.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\ResultPoint.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\Big5MapTable.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\Big5TextDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\Big5TextEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\GBTextDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\GBTextEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\JPTextDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\JPTextEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\KRHangulMapping.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\KRTextDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\textcodec\KRTextEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\TextDecoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\TextEncoder.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\TextUtfEncoding.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\WhiteRectDetector.cpp" />
+    <ClCompile Include="..\..\src\zxing\core\src\ZXBigInteger.cpp" />
+    <ClCompile Include="..\..\src\zxing\wrappers\gdiplus\BarcodeGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\wrappers\gdiplus\BarcodeReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\wrappers\gdiplus\GdiplusInit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\wrappers\gdiplus\ImageReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zxing\wrappers\gdiplus\ImageWriter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10125EEB-4BCC-417D-92DE-4C791FBC336C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libzxing</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>libzxing</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\src\zxing\core\src\;..\..\src\zxing\wrappers\gdiplus\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\src\zxing\core\src\;..\..\src\zxing\wrappers\gdiplus\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

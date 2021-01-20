@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{ea64d50b-1820-4fd7-9561-a505fe70ed12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\utils">
+      <UniqueIdentifier>{57e99323-3d40-45f5-a18b-fbf1b82583bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{c64049cc-d89b-4bf1-bd7e-4b579368aea8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\regex\regex2\re2.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\bitmap256.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\filtered_re2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\flags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\logging.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\mix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\mutex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\pod_array.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\prefilter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\prefilter_tree.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\prog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\regexp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\set.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\sparse_array.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\sparse_set.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\stringpiece.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\strutil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\unicode_casefold.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\unicode_groups.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\utf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regex\regex2\util\walker-inl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\regex\regex2\bitstate.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\compile.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\dfa.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\filtered_re2.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\mimics_pcre.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\nfa.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\onepass.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\parse.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\perl_groups.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\prefilter.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\prefilter_tree.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\prog.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\re2.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\regexp.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\set.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\simplify.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\stringpiece.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\tostring.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\unicode_casefold.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\unicode_groups.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\util\rune.cc">
+      <Filter>core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regex\regex2\util\strutil.cc">
+      <Filter>core\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

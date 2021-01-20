@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA6F56B4-06A4-441D-AD70-AC5A7D51FADB}</ProjectGuid>
+    <RootNamespace>libcurl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>curl</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\build\Win64\VC14\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)lib\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\build\Win64\VC14\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)lib\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src\curl\;..\..\..\openssl\include\;..\..\include\curl\;..\..\src\archive\zlib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;USE_OPENSSL;HAVE_ZLIB_H;HAVE_LIBZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;libcrypto.lib;libssl.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\openssl\bin\;..\..\..\foundation\bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(IntDir)$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\inc32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\openssl\build\Win64\VC14\DLL Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\src\curl\;..\..\..\openssl\include\;..\..\include\curl\;..\..\src\archive\zlib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BUILDING_LIBCURL;USE_OPENSSL;HAVE_ZLIB_H;HAVE_LIBZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;libcrypto.lib;libssl.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\openssl\bin\;..\..\..\foundation\bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(IntDir)$(TargetFileName).intermediate.manifest</ManifestFile>
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\inc32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BUILDING_LIBCURL;USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\openssl\build\Win64\VC14\DLL Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\curl\amigaos.c" />
+    <ClCompile Include="..\..\src\curl\asyn-ares.c" />
+    <ClCompile Include="..\..\src\curl\asyn-thread.c" />
+    <ClCompile Include="..\..\src\curl\base64.c" />
+    <ClCompile Include="..\..\src\curl\conncache.c" />
+    <ClCompile Include="..\..\src\curl\connect.c" />
+    <ClCompile Include="..\..\src\curl\content_encoding.c" />
+    <ClCompile Include="..\..\src\curl\cookie.c" />
+    <ClCompile Include="..\..\src\curl\curl_addrinfo.c" />
+    <ClCompile Include="..\..\src\curl\curl_ctype.c" />
+    <ClCompile Include="..\..\src\curl\curl_des.c" />
+    <ClCompile Include="..\..\src\curl\curl_endian.c" />
+    <ClCompile Include="..\..\src\curl\curl_fnmatch.c" />
+    <ClCompile Include="..\..\src\curl\curl_gethostname.c" />
+    <ClCompile Include="..\..\src\curl\curl_gssapi.c" />
+    <ClCompile Include="..\..\src\curl\curl_memrchr.c" />
+    <ClCompile Include="..\..\src\curl\curl_multibyte.c" />
+    <ClCompile Include="..\..\src\curl\curl_ntlm_core.c" />
+    <ClCompile Include="..\..\src\curl\curl_ntlm_wb.c" />
+    <ClCompile Include="..\..\src\curl\curl_path.c" />
+    <ClCompile Include="..\..\src\curl\curl_range.c" />
+    <ClCompile Include="..\..\src\curl\curl_rtmp.c" />
+    <ClCompile Include="..\..\src\curl\curl_sasl.c" />
+    <ClCompile Include="..\..\src\curl\curl_sspi.c" />
+    <ClCompile Include="..\..\src\curl\curl_threads.c" />
+    <ClCompile Include="..\..\src\curl\dict.c" />
+    <ClCompile Include="..\..\src\curl\dotdot.c" />
+    <ClCompile Include="..\..\src\curl\easy.c" />
+    <ClCompile Include="..\..\src\curl\escape.c" />
+    <ClCompile Include="..\..\src\curl\file.c" />
+    <ClCompile Include="..\..\src\curl\fileinfo.c" />
+    <ClCompile Include="..\..\src\curl\formdata.c" />
+    <ClCompile Include="..\..\src\curl\ftp.c" />
+    <ClCompile Include="..\..\src\curl\ftplistparser.c" />
+    <ClCompile Include="..\..\src\curl\getenv.c" />
+    <ClCompile Include="..\..\src\curl\getinfo.c" />
+    <ClCompile Include="..\..\src\curl\gopher.c" />
+    <ClCompile Include="..\..\src\curl\hash.c" />
+    <ClCompile Include="..\..\src\curl\hmac.c" />
+    <ClCompile Include="..\..\src\curl\hostasyn.c" />
+    <ClCompile Include="..\..\src\curl\hostcheck.c" />
+    <ClCompile Include="..\..\src\curl\hostip4.c" />
+    <ClCompile Include="..\..\src\curl\hostip6.c" />
+    <ClCompile Include="..\..\src\curl\hostip.c" />
+    <ClCompile Include="..\..\src\curl\hostsyn.c" />
+    <ClCompile Include="..\..\src\curl\http2.c" />
+    <ClCompile Include="..\..\src\curl\http.c" />
+    <ClCompile Include="..\..\src\curl\http_chunks.c" />
+    <ClCompile Include="..\..\src\curl\http_digest.c" />
+    <ClCompile Include="..\..\src\curl\http_negotiate.c" />
+    <ClCompile Include="..\..\src\curl\http_ntlm.c" />
+    <ClCompile Include="..\..\src\curl\http_proxy.c" />
+    <ClCompile Include="..\..\src\curl\idn_win32.c" />
+    <ClCompile Include="..\..\src\curl\if2ip.c" />
+    <ClCompile Include="..\..\src\curl\imap.c" />
+    <ClCompile Include="..\..\src\curl\inet_ntop.c" />
+    <ClCompile Include="..\..\src\curl\inet_pton.c" />
+    <ClCompile Include="..\..\src\curl\krb5.c" />
+    <ClCompile Include="..\..\src\curl\ldap.c" />
+    <ClCompile Include="..\..\src\curl\llist.c" />
+    <ClCompile Include="..\..\src\curl\md4.c" />
+    <ClCompile Include="..\..\src\curl\md5.c" />
+    <ClCompile Include="..\..\src\curl\memdebug.c" />
+    <ClCompile Include="..\..\src\curl\mime.c" />
+    <ClCompile Include="..\..\src\curl\mprintf.c" />
+    <ClCompile Include="..\..\src\curl\multi.c" />
+    <ClCompile Include="..\..\src\curl\netrc.c" />
+    <ClCompile Include="..\..\src\curl\non-ascii.c" />
+    <ClCompile Include="..\..\src\curl\nonblock.c" />
+    <ClCompile Include="..\..\src\curl\openldap.c" />
+    <ClCompile Include="..\..\src\curl\parsedate.c" />
+    <ClCompile Include="..\..\src\curl\pingpong.c" />
+    <ClCompile Include="..\..\src\curl\pipeline.c" />
+    <ClCompile Include="..\..\src\curl\pop3.c" />
+    <ClCompile Include="..\..\src\curl\progress.c" />
+    <ClCompile Include="..\..\src\curl\rand.c" />
+    <ClCompile Include="..\..\src\curl\rtsp.c" />
+    <ClCompile Include="..\..\src\curl\security.c" />
+    <ClCompile Include="..\..\src\curl\select.c" />
+    <ClCompile Include="..\..\src\curl\sendf.c" />
+    <ClCompile Include="..\..\src\curl\setopt.c" />
+    <ClCompile Include="..\..\src\curl\sha256.c" />
+    <ClCompile Include="..\..\src\curl\share.c" />
+    <ClCompile Include="..\..\src\curl\slist.c" />
+    <ClCompile Include="..\..\src\curl\smb.c" />
+    <ClCompile Include="..\..\src\curl\smtp.c" />
+    <ClCompile Include="..\..\src\curl\socks.c" />
+    <ClCompile Include="..\..\src\curl\socks_gssapi.c" />
+    <ClCompile Include="..\..\src\curl\socks_sspi.c" />
+    <ClCompile Include="..\..\src\curl\speedcheck.c" />
+    <ClCompile Include="..\..\src\curl\splay.c" />
+    <ClCompile Include="..\..\src\curl\ssh.c" />
+    <ClCompile Include="..\..\src\curl\ssh-libssh.c" />
+    <ClCompile Include="..\..\src\curl\strcase.c" />
+    <ClCompile Include="..\..\src\curl\strdup.c" />
+    <ClCompile Include="..\..\src\curl\strerror.c" />
+    <ClCompile Include="..\..\src\curl\strtok.c" />
+    <ClCompile Include="..\..\src\curl\strtoofft.c" />
+    <ClCompile Include="..\..\src\curl\system_win32.c" />
+    <ClCompile Include="..\..\src\curl\telnet.c" />
+    <ClCompile Include="..\..\src\curl\tftp.c" />
+    <ClCompile Include="..\..\src\curl\timeval.c" />
+    <ClCompile Include="..\..\src\curl\transfer.c" />
+    <ClCompile Include="..\..\src\curl\url.c" />
+    <ClCompile Include="..\..\src\curl\version.c" />
+    <ClCompile Include="..\..\src\curl\warnless.c" />
+    <ClCompile Include="..\..\src\curl\wildcard.c" />
+    <ClCompile Include="..\..\src\curl\x509asn1.c" />
+    <ClCompile Include="..\..\src\curl\vauth\cleartext.c" />
+    <ClCompile Include="..\..\src\curl\vauth\cram.c" />
+    <ClCompile Include="..\..\src\curl\vauth\digest.c" />
+    <ClCompile Include="..\..\src\curl\vauth\digest_sspi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\krb5_gssapi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\krb5_sspi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\ntlm.c" />
+    <ClCompile Include="..\..\src\curl\vauth\ntlm_sspi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\oauth2.c" />
+    <ClCompile Include="..\..\src\curl\vauth\spnego_gssapi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\spnego_sspi.c" />
+    <ClCompile Include="..\..\src\curl\vauth\vauth.c" />
+    <ClCompile Include="..\..\src\curl\vtls\axtls.c" />
+    <ClCompile Include="..\..\src\curl\vtls\cyassl.c" />
+    <ClCompile Include="..\..\src\curl\vtls\darwinssl.c" />
+    <ClCompile Include="..\..\src\curl\vtls\gskit.c" />
+    <ClCompile Include="..\..\src\curl\vtls\gtls.c" />
+    <ClCompile Include="..\..\src\curl\vtls\mbedtls.c" />
+    <ClCompile Include="..\..\src\curl\vtls\nss.c" />
+    <ClCompile Include="..\..\src\curl\vtls\openssl.c" />
+    <ClCompile Include="..\..\src\curl\vtls\polarssl.c" />
+    <ClCompile Include="..\..\src\curl\vtls\polarssl_threadlock.c" />
+    <ClCompile Include="..\..\src\curl\vtls\schannel.c" />
+    <ClCompile Include="..\..\src\curl\vtls\schannel_verify.c" />
+    <ClCompile Include="..\..\src\curl\vtls\vtls.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\curl\amigaos.h" />
+    <ClInclude Include="..\..\src\curl\arpa_telnet.h" />
+    <ClInclude Include="..\..\src\curl\asyn.h" />
+    <ClInclude Include="..\..\src\curl\config-win32.h" />
+    <ClInclude Include="..\..\src\curl\conncache.h" />
+    <ClInclude Include="..\..\src\curl\connect.h" />
+    <ClInclude Include="..\..\src\curl\content_encoding.h" />
+    <ClInclude Include="..\..\src\curl\cookie.h" />
+    <ClInclude Include="..\..\src\curl\curl_addrinfo.h" />
+    <ClInclude Include="..\..\src\curl\curl_base64.h" />
+    <ClInclude Include="..\..\src\curl\curl_ctype.h" />
+    <ClInclude Include="..\..\src\curl\curl_des.h" />
+    <ClInclude Include="..\..\src\curl\curl_endian.h" />
+    <ClInclude Include="..\..\src\curl\curl_fnmatch.h" />
+    <ClInclude Include="..\..\src\curl\curl_gethostname.h" />
+    <ClInclude Include="..\..\src\curl\curl_gssapi.h" />
+    <ClInclude Include="..\..\src\curl\curl_hmac.h" />
+    <ClInclude Include="..\..\src\curl\curl_ldap.h" />
+    <ClInclude Include="..\..\src\curl\curl_md4.h" />
+    <ClInclude Include="..\..\src\curl\curl_md5.h" />
+    <ClInclude Include="..\..\src\curl\curl_memory.h" />
+    <ClInclude Include="..\..\src\curl\curl_memrchr.h" />
+    <ClInclude Include="..\..\src\curl\curl_multibyte.h" />
+    <ClInclude Include="..\..\src\curl\curl_ntlm_core.h" />
+    <ClInclude Include="..\..\src\curl\curl_ntlm_wb.h" />
+    <ClInclude Include="..\..\src\curl\curl_path.h" />
+    <ClInclude Include="..\..\src\curl\curl_printf.h" />
+    <ClInclude Include="..\..\src\curl\curl_range.h" />
+    <ClInclude Include="..\..\src\curl\curl_rtmp.h" />
+    <ClInclude Include="..\..\src\curl\curl_sasl.h" />
+    <ClInclude Include="..\..\src\curl\curl_sec.h" />
+    <ClInclude Include="..\..\src\curl\curl_setup.h" />
+    <ClInclude Include="..\..\src\curl\curl_setup_once.h" />
+    <ClInclude Include="..\..\src\curl\curl_sha256.h" />
+    <ClInclude Include="..\..\src\curl\curl_sspi.h" />
+    <ClInclude Include="..\..\src\curl\curl_threads.h" />
+    <ClInclude Include="..\..\src\curl\curlx.h" />
+    <ClInclude Include="..\..\src\curl\dict.h" />
+    <ClInclude Include="..\..\src\curl\dotdot.h" />
+    <ClInclude Include="..\..\src\curl\easyif.h" />
+    <ClInclude Include="..\..\src\curl\escape.h" />
+    <ClInclude Include="..\..\src\curl\file.h" />
+    <ClInclude Include="..\..\src\curl\fileinfo.h" />
+    <ClInclude Include="..\..\src\curl\formdata.h" />
+    <ClInclude Include="..\..\src\curl\ftp.h" />
+    <ClInclude Include="..\..\src\curl\ftplistparser.h" />
+    <ClInclude Include="..\..\src\curl\getinfo.h" />
+    <ClInclude Include="..\..\src\curl\gopher.h" />
+    <ClInclude Include="..\..\src\curl\hash.h" />
+    <ClInclude Include="..\..\src\curl\hostcheck.h" />
+    <ClInclude Include="..\..\src\curl\hostip.h" />
+    <ClInclude Include="..\..\src\curl\http2.h" />
+    <ClInclude Include="..\..\src\curl\http_chunks.h" />
+    <ClInclude Include="..\..\src\curl\http_digest.h" />
+    <ClInclude Include="..\..\src\curl\http.h" />
+    <ClInclude Include="..\..\src\curl\http_negotiate.h" />
+    <ClInclude Include="..\..\src\curl\http_ntlm.h" />
+    <ClInclude Include="..\..\src\curl\http_proxy.h" />
+    <ClInclude Include="..\..\src\curl\if2ip.h" />
+    <ClInclude Include="..\..\src\curl\imap.h" />
+    <ClInclude Include="..\..\src\curl\inet_ntop.h" />
+    <ClInclude Include="..\..\src\curl\inet_pton.h" />
+    <ClInclude Include="..\..\src\curl\llist.h" />
+    <ClInclude Include="..\..\src\curl\memdebug.h" />
+    <ClInclude Include="..\..\src\curl\mime.h" />
+    <ClInclude Include="..\..\src\curl\multihandle.h" />
+    <ClInclude Include="..\..\src\curl\multiif.h" />
+    <ClInclude Include="..\..\src\curl\netrc.h" />
+    <ClInclude Include="..\..\src\curl\non-ascii.h" />
+    <ClInclude Include="..\..\src\curl\nonblock.h" />
+    <ClInclude Include="..\..\src\curl\parsedate.h" />
+    <ClInclude Include="..\..\src\curl\pingpong.h" />
+    <ClInclude Include="..\..\src\curl\pipeline.h" />
+    <ClInclude Include="..\..\src\curl\pop3.h" />
+    <ClInclude Include="..\..\src\curl\progress.h" />
+    <ClInclude Include="..\..\src\curl\rand.h" />
+    <ClInclude Include="..\..\src\curl\rtsp.h" />
+    <ClInclude Include="..\..\src\curl\select.h" />
+    <ClInclude Include="..\..\src\curl\sendf.h" />
+    <ClInclude Include="..\..\src\curl\setopt.h" />
+    <ClInclude Include="..\..\src\curl\setup-vms.h" />
+    <ClInclude Include="..\..\src\curl\share.h" />
+    <ClInclude Include="..\..\src\curl\sigpipe.h" />
+    <ClInclude Include="..\..\src\curl\slist.h" />
+    <ClInclude Include="..\..\src\curl\smb.h" />
+    <ClInclude Include="..\..\src\curl\smtp.h" />
+    <ClInclude Include="..\..\src\curl\sockaddr.h" />
+    <ClInclude Include="..\..\src\curl\socks.h" />
+    <ClInclude Include="..\..\src\curl\speedcheck.h" />
+    <ClInclude Include="..\..\src\curl\splay.h" />
+    <ClInclude Include="..\..\src\curl\ssh.h" />
+    <ClInclude Include="..\..\src\curl\strcase.h" />
+    <ClInclude Include="..\..\src\curl\strdup.h" />
+    <ClInclude Include="..\..\src\curl\strerror.h" />
+    <ClInclude Include="..\..\src\curl\strtok.h" />
+    <ClInclude Include="..\..\src\curl\strtoofft.h" />
+    <ClInclude Include="..\..\src\curl\system_win32.h" />
+    <ClInclude Include="..\..\src\curl\telnet.h" />
+    <ClInclude Include="..\..\src\curl\tftp.h" />
+    <ClInclude Include="..\..\src\curl\timeval.h" />
+    <ClInclude Include="..\..\src\curl\transfer.h" />
+    <ClInclude Include="..\..\src\curl\urldata.h" />
+    <ClInclude Include="..\..\src\curl\url.h" />
+    <ClInclude Include="..\..\src\curl\warnless.h" />
+    <ClInclude Include="..\..\src\curl\wildcard.h" />
+    <ClInclude Include="..\..\src\curl\x509asn1.h" />
+    <ClInclude Include="..\..\src\curl\vauth\digest.h" />
+    <ClInclude Include="..\..\src\curl\vauth\ntlm.h" />
+    <ClInclude Include="..\..\src\curl\vauth\vauth.h" />
+    <ClInclude Include="..\..\src\curl\vtls\axtls.h" />
+    <ClInclude Include="..\..\src\curl\vtls\cyassl.h" />
+    <ClInclude Include="..\..\src\curl\vtls\darwinssl.h" />
+    <ClInclude Include="..\..\src\curl\vtls\gskit.h" />
+    <ClInclude Include="..\..\src\curl\vtls\gtls.h" />
+    <ClInclude Include="..\..\src\curl\vtls\mbedtls.h" />
+    <ClInclude Include="..\..\src\curl\vtls\nssg.h" />
+    <ClInclude Include="..\..\src\curl\vtls\openssl.h" />
+    <ClInclude Include="..\..\src\curl\vtls\polarssl.h" />
+    <ClInclude Include="..\..\src\curl\vtls\polarssl_threadlock.h" />
+    <ClInclude Include="..\..\src\curl\vtls\schannel.h" />
+    <ClInclude Include="..\..\src\curl\vtls\vtls.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\curl\libcurl.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
